@@ -1,13 +1,119 @@
-body {
+*
+{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.title
+{ 
+  color: rgb(253, 253, 253);
+  font-size:2rem;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  padding:1vh 2vh;
+}
+.title:hover
+{ 
+  color: rgb(255, 0, 0);
+  border: 0.5px solid black;
+  background-color: whitesmoke;
+  transition: all 1s;
+  letter-spacing: 0.3px;
+   background-color: black;
+}
+
+.title-heading
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid black;
+  margin:8px 5px 5px 8px;
+  padding: 10px; 
+  max-width: 100%;
+  height: auto;
+  background: linear-gradient(to right,rgb(155, 10, 10)80%,rgba(1, 0, 0, 0.929) 100%);
+  border-radius: 10px;
+}
+
+
+
+.cards
+{
+ 
+  display: flex;
+  justify-content:space-evenly;
+  text-align: left;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin:0 auto;
+  margin-top: 30px;
+  gap: 20px;
+}
+.card
+{
+  width:350px;
+  height: max content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgb(0,0,0,0.24)0px 3px 8px;
+}
+.image
+{
+  height: 320px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.tour-info
+{
+  margin: 20px 5px;
+}
+.tour-price
+{
+  color: rgb(24, 159, 24);
+}
+.tour-name
+{
+  margin:2px 0px;
+  font-size: 1.5rem;
+}
+span
+{
+  color: #12b0e8;
+  cursor: pointer;
+}
+.btn-red
+{
+  margin-top: 18px;
+  padding:10px 80px;
+ border: 1px solid rgb(161, 45, 45);
+ border-radius:10px;
+ cursor: pointer;
+ font-size: 18px;
+ font-weight: bold;
+ background-color: #b4161b21;
+}
+.btn-red:hover
+{
+  background-color: red;
+  color: white;
+  letter-spacing: 1.5px;
+  transition:all 0.5s;
+  overflow: hidden;
+  text-shadow: yellowgreen;
+  transform-style: preserve-3d;
+
+}
+.reset
+{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;  
 }
